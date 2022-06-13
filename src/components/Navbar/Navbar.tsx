@@ -5,7 +5,6 @@ const Navbar: React.FC = () => {
   return (
     <Flex bg="white" height="44px" padding="6px 12px">
       <Flex>Logos</Flex>
-      Navbar
     </Flex>
   );
 };
