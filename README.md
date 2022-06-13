@@ -1,1 +1,1 @@
-skill : next.js, typescript, chakra ui
+skill : next.js, typescript, chakra ui, recoil
