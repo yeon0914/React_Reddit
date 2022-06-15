@@ -14,7 +14,7 @@ const Header: React.FC<HeaderProps> = ({ communityData }) => {
     <Flex direction="column" width="100%" height="146px">
       <Box height="50%" bg="blue.400"></Box>
       <Flex justify="center" bg="white" flexGrow={1}>
-        <Flex width="95%" maxWidth="860px" border="1px solid red">
+        <Flex width="95%" maxWidth="860px">
           {communityData.imageURL ? (
             <Image></Image>
           ) : (
@@ -25,21 +25,21 @@ const Header: React.FC<HeaderProps> = ({ communityData }) => {
               top={-3}
               color="blue.500"
               border="4px solid white"
-              borderRadius="90"
+              borderRadius="50%"
             ></Icon>
           )}
           <Flex padding="10px 16px">
             <Flex direction="column" mr={6}>
-              <Text fontWeight={600} fontSize="16pt">
+              <Text fontWeight={800} fontSize="16pt">
                 {communityData.id}
               </Text>
               <Text fontWeight={600} fontSize="10pt" color="gray.400">
-                {communityData.id}
+                r/{communityData.id}
               </Text>
             </Flex>
             <Button
               variant={isJoined ? "outline" : "solid"}
-              height="25px"
+              height="28px"
               pr={6}
               pl={6}
               onClick={() => {}}
