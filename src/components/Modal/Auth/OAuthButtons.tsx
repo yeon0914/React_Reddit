@@ -10,7 +10,7 @@ const OAuthButtons: React.FC = () => {
     useSignInWithGoogle(auth);
 
   const createUserDocument = async (user: User) => {
-    const userDocRef = doc(firestore, "user", user.uid);
+    const userDocRef = doc(firestore, "users", user.uid);
     await setDoc(userDocRef, JSON.parse(JSON.stringify(user)));
   };
 
