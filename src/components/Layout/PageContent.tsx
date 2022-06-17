@@ -7,6 +7,7 @@ type PageContentProps = {
 
 const PageContent: React.FC<PageContentProps> = ({ children }) => {
   console.log(children);
+  const iteration = [1, 2, 3, 4, 5];
 
   return (
     <Flex border="1px solid red" justify="center" p="16px 0px">
